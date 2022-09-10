@@ -22,7 +22,7 @@
   <body>
     <!-- navigation section start here -->
     <header class="container">
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg bg-light fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="resource/images/logo.png" alt="Bootstrap" />
@@ -34,11 +34,11 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> Shoes</a>
+                <a class="nav-link" href="#shoess"> Shoes</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link">Backpack</a>
+                <a class="nav-link" href="#backpacks">Backpack</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link">Subcribe</a>
@@ -209,7 +209,7 @@
       <!-- catagories end -->
 
       <!-- show section start -->
-      <section class="container my-5">
+      <section id="shoess" class="container my-5">
         <h1>Shoes</h1>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col">
@@ -284,7 +284,7 @@
       </section>
       <!-- show section end -->
       <!-- bag section start -->
-      <section class="container my-5">
+      <section id="backpacks" class="container my-5">
         <h1>Backpack</h1>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col">
@@ -358,7 +358,43 @@
         </div>
       </section>
       <!-- bag section end -->
+      <!-- subcribtion part start here -->
+      <section
+        style="height: 300px"
+        class="container rounded-3 mt-5 d-flex align-items-center justify-content-center curosel-bg"
+      >
+        <div>
+          <h2>LET'S STAY IN TOUCH</h2>
+          <p>Get Updates on Sales, Special and more</p>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+            <button type="submit" class="btn btn-main">SUBMIT</button>
+          </form>
+        </div>
+      </section>
+      <!-- subcribtion part end here -->
     </main>
+    <footer class="container mt-5 text-center">
+      <p>
+        <small>
+          &copy; 2022, All rights reserve panda commerce, Ghatail,
+          Tangail</small
+        >
+      </p>
+    </footer>
 
     <!-- bootstrap for js enable functionality -->
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
